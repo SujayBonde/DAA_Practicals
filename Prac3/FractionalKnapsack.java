@@ -1,6 +1,8 @@
+
 import java.util.*;
 
 class Item {
+
     int profit, weight;
     double ratio;
 
@@ -50,8 +52,8 @@ public class FractionalKnapsack {
         }
 
         // Sort by profit/weight ratio (descending)
-        Arrays.sort(items, (a, b) ->
-                Double.compare(b.ratio, a.ratio));
+        Arrays.sort(items, (a, b)
+                -> Double.compare(b.ratio, a.ratio));
 
         double maxProfit = 0;
 
